@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\a.mastroberardino\.android\build-cache\39226bd082fce4ff6027119da243ca5853da17ef\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44b025e216f91da596373dc8e6ade4a694e550b8">
+        <dex dex="C:\Users\a.mastroberardino\Downloads\ARToolKit5-bin-5.3.2-Android\AndroidStudioProjects\ARSimpleProj\aRSimple\build\intermediates\pre-dexed\debug\classes_1c5140d06db4a7ddf7ee8d27b799b7f500f5bf1e.jar" />
+    </item>
+
+</items>
