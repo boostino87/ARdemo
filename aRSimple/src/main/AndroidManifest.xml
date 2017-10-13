@@ -41,6 +41,11 @@
             </intent-filter>
 
         </activity>
-        <activity android:name="org.artoolkit.ar.base.camera.CameraPreferencesActivity"></activity>
+        <activity android:name="org.artoolkit.ar.base.camera.CameraPreferencesActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

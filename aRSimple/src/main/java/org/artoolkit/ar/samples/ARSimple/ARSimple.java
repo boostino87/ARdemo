@@ -49,18 +49,18 @@
 
 package org.artoolkit.ar.samples.ARSimple;
 
-import android.content.Intent;
+//import android.content.Intent;
 import android.os.Bundle;
 import android.widget.FrameLayout;
 
 import org.artoolkit.ar.base.ARActivity;
 import org.artoolkit.ar.base.rendering.ARRenderer;
 
-import org.artoolkit.ar.base.camera.CameraPreferencesActivity;
+// import org.artoolkit.ar.base.camera.CameraPreferencesActivity;
 
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
+// import android.view.Menu;
+// import android.view.MenuInflater;
+// import android.view.MenuItem;
 
 
 /**
@@ -79,7 +79,9 @@ public class ARSimple extends ARActivity {
      */
     @Override
     protected ARRenderer supplyRenderer() {
-        return new SimpleRenderer();
+        SimpleRenderer renderer = new SimpleRenderer();
+        renderer.arSimple = this;
+        return renderer;
     }
 
     /**
@@ -90,20 +92,20 @@ public class ARSimple extends ARActivity {
         return (FrameLayout) this.findViewById(R.id.mainLayout);
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.options, menu);
-        return true;
-    }
+    // @Override
+    // public boolean onCreateOptionsMenu(Menu menu) {
+        // MenuInflater inflater = getMenuInflater();
+        // inflater.inflate(R.menu.options, menu);
+        // return true;
+    // }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == R.id.settings) {
-            startActivity(new Intent(this, CameraPreferencesActivity.class));
-            return true;
-        } else {
-            return super.onOptionsItemSelected(item);
-        }
-    }
+    // @Override
+    // public boolean onOptionsItemSelected(MenuItem item) {
+        // if (item.getItemId() == R.id.settings) {
+            // startActivity(new Intent(this, CameraPreferencesActivity.class));
+            // return true;
+        // } else {
+            // return super.onOptionsItemSelected(item);
+        // }
+    // }
 }

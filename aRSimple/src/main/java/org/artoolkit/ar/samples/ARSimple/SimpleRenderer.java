@@ -49,6 +49,8 @@
 
 package org.artoolkit.ar.samples.ARSimple;
 
+import android.view.View;
+
 import org.artoolkit.ar.base.ARToolKit;
 import org.artoolkit.ar.base.rendering.ARRenderer;
 import org.artoolkit.ar.base.rendering.Cube;
@@ -62,6 +64,7 @@ public class SimpleRenderer extends ARRenderer {
 
     private int markerID = -1;
     private Cube cube = new Cube(40.0f, 0.0f, 0.0f, 20.0f);
+    public ARSimple arSimple;
 
     /**
      * Markers can be configured here.
@@ -97,6 +100,9 @@ public class SimpleRenderer extends ARRenderer {
             gl.glMatrixMode(GL10.GL_MODELVIEW);
             gl.glLoadMatrixf(ARToolKit.getInstance().queryMarkerTransformation(markerID), 0);
             cube.draw(gl);
+			
+			View textView = arSimple.findViewById(R.id.textView);
+            textView.bringToFront();
         }
 
     }
