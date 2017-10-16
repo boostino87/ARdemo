@@ -101,8 +101,8 @@ public class SimpleRenderer extends ARRenderer {
             gl.glLoadMatrixf(ARToolKit.getInstance().queryMarkerTransformation(markerID), 0);
             cube.draw(gl);
 			
-			View textView = arSimple.findViewById(R.id.textView);
-            textView.bringToFront();
+//			View textView = arSimple.findViewById(R.id.textView);
+//            textView.bringToFront();
         }
 
     }

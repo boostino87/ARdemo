@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/topLayout"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="horizontal">
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
 
-	<TextView
+
+    <TextView
         android:id="@+id/textView"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -18,6 +15,11 @@
         android:textColor="#FFFF0000"
 
         android:text="DEMO" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal">
 		
     <FrameLayout
         android:id="@+id/mainLayout"
@@ -26,3 +28,4 @@
         android:orientation="horizontal" />
 
 </LinearLayout>
+    </merge>
